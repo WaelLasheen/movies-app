@@ -1,4 +1,4 @@
-import 'package:movies_app/database/model.dart';
+import 'package:movies_app/core/database/model.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 

@@ -1,4 +1,4 @@
-import 'package:movies_app/database/database_helper.dart';
+import 'package:movies_app/core/database/database_helper.dart';
 
 class Login_Register{
   int? id;

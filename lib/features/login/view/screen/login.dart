@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/core/login_register_button.dart';
-import 'package:movies_app/core/move_between_login_register.dart';
-import 'package:movies_app/core/text_feild.dart';
+import 'package:movies_app/core/components/login_register_button.dart';
+import 'package:movies_app/core/components/move_between_login_register.dart';
+import 'package:movies_app/core/components/text_feild.dart';
 import 'package:movies_app/features/login/view/components/openning_text.dart';
 
 class LogIn extends StatelessWidget {
