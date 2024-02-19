@@ -23,9 +23,9 @@ class LogIn extends StatelessWidget {
                 const OpenningText(),
                 
                 const Spacer(flex: 4,),
-                textFeild(hintText: 'Enter your email', controller: emailControler),
+                textFeild(hintText: 'Enter your email', controller: emailControler, type: 'email',),
                 const SizedBox(height: 20,),
-                textFeild(hintText: 'Enter your password' ,obscureText: true, controller: passwardControler,),
+                textFeild(hintText: 'Enter your password' ,obscureText: true, controller: passwardControler, type: 'password',),
                 const Spacer(flex: 1),
                 const LoginAndRegister(text: "Login"),
                 const SizedBox(height: 15,),
