@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movies_app/core/login_register_button.dart';
 import 'package:movies_app/core/move_between_login_register.dart';
 import 'package:movies_app/core/text_feild.dart';
+import 'package:movies_app/features/login/view/components/openning_text.dart';
 
 class LogIn extends StatelessWidget {
   LogIn({super.key});
@@ -19,8 +20,7 @@ class LogIn extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: Column(
               children: [
-                const Text("Welcome back! Glad to see you, Again!",
-                style: TextStyle(color: Colors.black ,fontWeight: FontWeight.bold ,fontSize: 30),),
+                const OpenningText(),
                 
                 const Spacer(flex: 4,),
                 textFeild(hintText: 'Enter your email', controller: emailControler),

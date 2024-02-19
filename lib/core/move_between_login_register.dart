@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/features/login/view/login.dart';
+import 'package:movies_app/features/login/view/screen/login.dart';
 import 'package:movies_app/features/register/view/screen/register.dart';
 
 class move_between extends StatelessWidget {
