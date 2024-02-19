@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/core/database/database_helper.dart';
-import 'package:movies_app/core/database/model.dart';
 import 'package:movies_app/core/provider/login_register_data.dart';
-// import 'package:movies_app/database/database_helper.dart';
 import 'package:movies_app/features/onboarding/view/screen/onboarding_screen.dart';
 import 'package:provider/provider.dart';
 
 
 void main() async{
-  // WidgetsFlutterBinding.ensureInitialized();
-  // await Login_Register_Helper.instance.open();
+  WidgetsFlutterBinding.ensureInitialized();
+  await Login_Register_Helper.instance.open();
   runApp(const MyApp());
 }
 
