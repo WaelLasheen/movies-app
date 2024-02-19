@@ -20,7 +20,7 @@ class move_between extends StatelessWidget {
             onPressed: () {
               if (to == 'register') {
                 Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => const Register(),
+                  builder: (context) => Register(),
                 ));
               } else {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(

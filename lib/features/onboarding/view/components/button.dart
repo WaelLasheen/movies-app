@@ -17,7 +17,7 @@ class button extends StatelessWidget {
         onPressed: () {
           Navigator.of(context).push(MaterialPageRoute(
             builder: (context) =>
-                text == "Login" ? LogIn() : const Register(),
+                text == "Login" ? LogIn() : Register(),
           ));
         },
         child: Text(
