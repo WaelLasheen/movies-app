@@ -19,9 +19,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (BuildContext context)=> Login_Register_Data(),
-      child: const MaterialApp(
+      child:  MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: OnBoardingScreen(),
+        theme: ThemeData.dark(),
+        home: const OnBoardingScreen(),
       ),
     );
   }

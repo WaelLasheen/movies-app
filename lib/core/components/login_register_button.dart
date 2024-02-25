@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movies_app/core/database/database_helper.dart';
 import 'package:movies_app/core/database/model.dart';
 import 'package:movies_app/core/provider/login_register_data.dart';
-import 'package:movies_app/features/welcome/welcome_screen.dart';
+import 'package:movies_app/features/home/Home.dart';
 import 'package:provider/provider.dart';
 
 class LoginAndRegister extends StatelessWidget {
@@ -20,7 +20,7 @@ class LoginAndRegister extends StatelessWidget {
           final data = Provider.of<Login_Register_Data>(context ,listen: false);
           if(text=="Login"){
             if(existing(await Login_Register_Helper.instance.getUsers(), data.email, data.password)){
-              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const Welcome(),));
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => Home(),));
             }
             else{
               print("/////////////////////////////");
@@ -38,7 +38,7 @@ class LoginAndRegister extends StatelessWidget {
                 print('///////////////////////////////////');
               }
 
-              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const Welcome(),));
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => Home(),));
             }
             else{
 //////////////////////////////// add it in snackbar

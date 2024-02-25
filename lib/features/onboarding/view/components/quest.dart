@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/features/welcome/welcome_screen.dart';
+import 'package:movies_app/features/home/Home.dart';
 
 class guest extends StatelessWidget {
   const guest({super.key});
@@ -9,7 +9,7 @@ class guest extends StatelessWidget {
     return TextButton(
         onPressed: () {
           Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) => const Welcome(),
+            builder: (context) =>  Home(),
           ));
         },
         child: const Text(
