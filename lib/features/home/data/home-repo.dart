@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart'  as http;
-import 'package:movies_app/features/home/movies_model.dart';
+import 'package:movies_app/features/home/data/movies_model.dart';
 
 
 class HomeRepo{

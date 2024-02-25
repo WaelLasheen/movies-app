@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/features/home/Home.dart';
+import 'package:movies_app/features/home/view/Home.dart';
 
 class guest extends StatelessWidget {
   const guest({super.key});
