@@ -6,7 +6,7 @@ import 'package:movies_app/features/home/data/movies_model.dart';
 
 class HomeRepo{
 
-  static Future<MovieSverse>fetchData()async{
+  Future<MovieSverse>fetchData()async{
     String URL="https://moviesverse1.p.rapidapi.com/most-popular-movies";
     final response = await http.get(
       Uri.parse(URL),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movies_app/core/database/database_helper.dart';
 import 'package:movies_app/core/database/model.dart';
 import 'package:movies_app/core/provider/login_register_data.dart';
-import 'package:movies_app/features/home/view/Home.dart';
+import 'package:movies_app/features/home/view/screen/Home.dart';
 import 'package:provider/provider.dart';
 
 class LoginAndRegister extends StatelessWidget {
