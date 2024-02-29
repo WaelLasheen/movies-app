@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/features/home/data/movies_model.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class MoviesCard extends StatelessWidget {
   final Movies movie;
@@ -25,9 +26,11 @@ class MoviesCard extends StatelessWidget {
                 bottomLeft: Radius.circular(8),
                 bottomRight: Radius.circular(8),
               ),
-              child: Image.network(
-                movie.image,
+              child: CachedNetworkImage(
+                imageUrl: movie.image,
                 fit: BoxFit.contain,
+                placeholder: (context, url) => const Center(child: CircularProgressIndicator(),),
+                errorWidget: (context, url, error) => const Icon(Icons.error ,color: Colors.red,),
               ),
             ),
           ),
@@ -40,12 +43,13 @@ class MoviesCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 2,),
-          const Wrap(
+           movie.rating==''? const Text('No Rating')
+           :Wrap(
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
-              Text('Click' ,style: TextStyle(fontWeight: FontWeight.w500),),
-              SizedBox(width: 6,),
-              Icon(Icons.star ,color: Colors.amber,size: 18,),
+              Text(movie.rating.substring(0,4) ,style: const TextStyle(fontWeight: FontWeight.w500),),
+              const SizedBox(width: 6,),
+              const Icon(Icons.star ,color: Colors.amber,size: 18,),
             ],
           ),
         ],
